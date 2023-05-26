@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>@matheoguilbert</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            VANTA.BIRDS({
+                el: "#vanta",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                colorMode: "lerpGradient",
+                wingSpan: 10.00,
+                speedLimit: 3.00,
+                separation: 100.00,
+                alignment: 70.00,
+                cohesion: 5.00,
+                quantity: 1.00,
+                backgroundAlpha: 0
+            });
+
+            setTimeout(() => {
+                const main = document.querySelector('main');
+                main.style.opacity = 1;
+                main.style.filter = 'blur(0px)';
+            }, 1000);
+            
+        });
+    </script>
+</head>
+
+<body>
+    <div id="vanta"></div>
+    <main>
+        <header>
+            <img src="img/logo.jpg" />
+            <h2>@matheo.guilbert</h2>
+        </header>
+        <div class="links-container">
+            <a id="website" href="https://matheoguilbert.fr/" target="_blank">
+                <img src="img/personal_website.svg" />
+                <p>Personal website</p>
+            </a>
+            <a id="instagram" href="https://www.instagram.com/matheo.guilbert/" target="_blank">
+                <img src="img/instagram.svg" />
+                <p>Instagram</p>
+            </a>
+            <a id="youtube" href="https://www.youtube.com/@maethik3673" target="_blank">
+                <img src="img/youtube.svg" />
+                <p>Youtube</p>
+            </a>
+            <a id="linkedin" href="https://www.linkedin.com/in/math%C3%A9o-guilbert-26a209258/" target="_blank">
+                <img src="img/linkedin.svg" />
+                <p>LinkedIn</p>
+            </a>
+            <a id="github" href="https://github.com/Maethik" target="_blank">
+                <img src="img/github.svg" />
+                <p>GitHub</p>
+            </a>
+        </div>
+    </main>
+    <a id="a" href="https://www.pexels.com/fr-fr/photo/paysage-foret-parc-paix-3632931/" target="_blank"><p>Photo de Sean Valentine</p></a>
+</body>
+
+</html>
